@@ -117,16 +117,16 @@
                                         <rect key="frame" x="28" y="225" width="544" height="347"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zGb-fM-yfA">
-                                                <rect key="frame" x="28" y="28" width="488" height="122"/>
+                                                <rect key="frame" x="28" y="28" width="488" height="119"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Login / Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yi0-Pb-jec">
-                                                        <rect key="frame" x="0.0" y="0.0" width="488" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="488" height="23"/>
                                                         <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UWO-WJ-zOJ" customClass="MaterialTextField" customModule="myShowCase" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="46" width="488" height="28"/>
+                                                        <rect key="frame" x="0.0" y="43" width="488" height="28"/>
                                                         <color key="backgroundColor" red="0.94488301699999999" green="0.94488301699999999" blue="0.94488301699999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="28" id="1pi-N6-aYJ"/>
@@ -136,7 +136,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-yl-gfT" customClass="MaterialTextField" customModule="myShowCase" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="94" width="488" height="28"/>
+                                                        <rect key="frame" x="0.0" y="91" width="488" height="28"/>
                                                         <color key="backgroundColor" red="0.94488301699999999" green="0.94488301699999999" blue="0.94488301699999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="28" id="RZX-zn-sxe"/>
@@ -147,7 +147,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egx-jJ-Oqx" customClass="MaterialButton" customModule="myShowCase" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egx-jJ-Oqx" customClass="MaterialButton" customModule="myShowCase" customModuleProvider="target">
                                                 <rect key="frame" x="194" y="198" width="156" height="30"/>
                                                 <color key="backgroundColor" red="1" green="0.33450856969999998" blue="0.19964309620000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -305,8 +305,8 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="iSF-aH-yNe">
                                                     <rect key="frame" x="40" y="0.0" width="490" height="72"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="demotesting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.55000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="Hgs-nc-mDN">
-                                                            <rect key="frame" x="0.0" y="0.0" width="84" height="22"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="demotesting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.55000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="Hgs-nc-mDN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="79" height="22"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="22" id="xy2-Gu-xoc"/>
                                                             </constraints>

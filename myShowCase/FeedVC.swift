@@ -47,7 +47,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
                     case .Success(let upload, _, _):
                         upload.responseJSON { response in
 
-                            if let info = response as? Dictionary<String, AnyObject> {
+                            if let info = response.result.value as? Dictionary<String, AnyObject> {
                             
                                 if let links = info["links"] as? Dictionary<String, AnyObject> {
                                     print(links)
