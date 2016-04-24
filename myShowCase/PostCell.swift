@@ -78,7 +78,7 @@ class PostCell: UITableViewCell {
         }
         
         likesRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-            if let doesNotExist = snapshot.value as? NSNull { //Firebase only returns NSNull as null value
+            if (snapshot.value as? NSNull) != nil { //Firebase only returns NSNull as null value
                 self.likesImg.image = UIImage(named: "heart-empty")
             } else {
                 self.likesImg.image = UIImage(named: "heart-full")

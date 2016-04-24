@@ -11,7 +11,7 @@ import UIKit
 
 //Colors
 let SHADOW_COLOR: CGFloat = 157.0 / 255.0
-let BG_COLOR: CGFloat = 241
+let BG_COLOR: CGFloat = 241.0 / 255.0
 
 //Keys
 let KEY_UID = "uid"

@@ -36,21 +36,18 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
                 let keyData = "49ACILMSa3bb4f31c5b6f7aeee9e5623c70c83d7".dataUsingEncoding(NSUTF8StringEncoding)!
                 let keyJSON = "json".dataUsingEncoding(NSUTF8StringEncoding)!
                 
-                
                 Alamofire.upload(.POST, url, multipartFormData: { multipartFormData in
                     
                     multipartFormData.appendBodyPart(data: imgData, name:"fileupload", fileName:"image", mimeType: "image/jpg")
                     multipartFormData.appendBodyPart(data: keyData, name: "key")
                     multipartFormData.appendBodyPart(data: keyJSON, name: "format")
-                    
-                }) { encodingResult in
+                    }, encodingCompletion: { encodingResult in
                     
                     switch encodingResult {
                     case .Success(let upload, _, _):
-                        upload.responseJSON( completionHandler: { result in
-                            
-                            //.responseJSON(completionHandler: { result in
-                            if let info = result as? Dictionary<String, AnyObject> {
+                        upload.responseJSON { response in
+
+                            if let info = response as? Dictionary<String, AnyObject> {
                             
                                 if let links = info["links"] as? Dictionary<String, AnyObject> {
                                     print(links)
@@ -59,15 +56,16 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
                                     }
                                 }
                             } else {
-                                print(result.description)
+                                print(response.description)
                             }
-                        })
+                        }
                         
                     case .Failure(let error):
                         print(error)
                         //Maybe show alert to user and let them try again
                     }
-                }
+                })
+            
             } else {
                 postToFirebase(nil)
             }
